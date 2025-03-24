@@ -1,0 +1,237 @@
+.fondorojo{
+    background-color: rgb(224, 0, 0);
+    width: max;
+    height: auto;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+.fondoazul{
+    background-color: rgb(0, 104, 255);
+    width: max;
+    height: auto;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+.fondoamarillo{
+    background-color: rgb(255, 240, 0);
+    width: max;
+    height: auto;
+    color: black;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+.fondoverde{
+    background-color: rgb(0, 192, 0);
+    width: max;
+    height: auto;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+.fondopurpura{
+    background-color: rgb(128, 0, 255);
+    width: max;
+    height: auto;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+.fondonaranja{
+    background-color: rgb(255, 128, 0);
+    width: max;
+    height: auto;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+.fondomagenta{
+    background-color: rgb(255, 0, 184);
+    width: max;
+    height: auto;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+.fondocyan{
+    background-color: rgb(0, 255, 255);
+    width: max;
+    height: auto;
+    color: black;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+.fondorosa{
+    background-color: rgb(255, 102, 128);
+    width: max;
+    height: auto;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+.fondomenta{
+    background-color: rgb(0, 255, 128);
+    width: max;
+    height: auto;
+    color: black;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+.fondogrisc{
+    background-color: rgb(216, 216, 216);
+    width: max;
+    height: auto;
+    color: black;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+.fondogris{
+    background-color: rgb(128, 128, 128);
+    width: max;
+    height: auto;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+.fondogriso{
+    background-color: rgb(64, 64, 64);
+    width: max;
+    height: auto;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+.fondoblanco{
+    background-color: rgb(255, 255, 255);
+    width: max;
+    height: auto;
+    color: black;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+.fondonegro{
+    background-color: rgb(0, 0, 0);
+    width: max;
+    height: auto;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+.asistencia{
+    margin-top: 50px;
+    margin-bottom: 100px;
+    font-size: 1.2rem;
+}
+.asistio{
+    background-color: rgb(0, 255, 0);
+}
+.noasistio{
+    background-color: red;
+}
+body{
+    font-family: 'Orbitron';
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.elegircolor{
+    font-family: 'Orbitron';
+    margin-top: 20px;
+    font-size: 1.3rem;
+}
+input:not([type="radio"]){
+    width: 80%;
+    font-family: 'Orbitron';
+    font-size: 1.2rem;
+    border-radius: 10px;
+}
+th{
+    padding-right: 30px;
+    padding-left: 30px;
+}
+.lugares{
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+input[type="number"]{
+    margin-bottom: 20px;
+}
+.colordeseado{
+    font-size: 1.3rem;
+}

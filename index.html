@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="app" >
+      <label class="colordeseado">Color Deseado: </label>
+        <select class="elegircolor" v-model="color">
+            <option value="fondorojo">Rojo</option>
+            <option value="fondoazul">Azul</option>
+            <option value="fondoamarillo">Amarillo</option>
+            <option value="fondoverde">Verde</option>
+            <option value="fondopurpura">Purpura</option>
+            <option value="fondonaranja">Naranja</option>
+            <option value="fondomagenta">Magenta</option>
+            <option value="fondocyan">Cyan</option>
+            <option value="fondorosa">Rosa</option>
+            <option value="fondomenta">Menta</option>
+            <option value="fondogrisc">Gris Claro</option>
+            <option value="fondogris">Gris</option>
+            <option value="fondogriso">Gris Oscuro</option>
+            <option value="fondonegro">Negro</option>
+            <option value="fondoblanco">Blanco</option>
+        </select>
+        <br>
+        <br>
+        <label class="lugares">No. Lugares de trabajo: </label>
+        <br>
+        <input type="number" v-model="cantidad">
+        <div :class="color" v-for="data in cantidad">
+          <label>Lugar de Trabajo</label> <br> <input type="text"></input>
+          <br><br>
+          <label>Tiempo que Trabajó</label> <br> <input type="number"></input>
+        </div>
+        <table class="asistencia" border="1">
+          <thead>
+              <th>Nombre</th>
+              <th>Apellido</th>
+              <th>Control Asistencia</th>
+          </thead>
+          <tr v-for="(data,index) in personas" :class="asistencia[index]">
+              <td>{{data.nombre}}</td>
+              <td>{{data.apellido}}</td>
+              <td>
+                  <input :name="'asistencia-' + index" type="radio" value="asistio" :id="'asistio-' + index" v-model="asistencia[index]">Asistio</input>
+                  <input :name="'asistencia-' + index" type="radio" value="noasistio" :id="'noasistio-' + index" v-model="asistencia[index]">No Asistio</input>
+              </td>
+          </tr>
+      </table>
+  </div>
+  <script src="vue.js"></script>
+  <script>
+  const { createApp } = Vue
+  createApp({
+      data() {
+          return {
+              cantidad : 1,
+              color : "fondoblanco",
+              personas : [
+                  {
+                      nombre : 'Tulio',
+                      apellido : 'Triviño'
+                  },
+                  {
+                      nombre : 'Juan Carlos',
+                      apellido : 'Bodoque'
+                  }
+              ],
+              asistencia: []
+          }
+      },
+  }).mount('#app')
+  </script>
+</body>
+</html>
