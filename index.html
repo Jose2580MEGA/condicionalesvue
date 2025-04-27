@@ -11,7 +11,7 @@
 </head>
 <body>
     <div id="app" >
-      <label class="colordeseado">Color Deseado: </label>
+    <label class="colordeseado">Color Deseado: </label>
         <select class="elegircolor" v-model="color">
             <option value="fondorojo">Rojo</option>
             <option value="fondoazul">Azul</option>
@@ -35,48 +35,48 @@
         <br>
         <input type="number" v-model="cantidad">
         <div :class="color" v-for="data in cantidad">
-          <label>Lugar de Trabajo</label> <br> <input type="text"></input>
-          <br><br>
-          <label>Tiempo que Trabajó</label> <br> <input type="number"></input>
+        <label>Lugar de Trabajo</label> <br> <input type="text"></input>
+        <br><br>
+        <label>Tiempo que Trabajó</label> <br> <input type="number"></input>
         </div>
         <table class="asistencia" border="1">
-          <thead>
-              <th>Nombre</th>
-              <th>Apellido</th>
-              <th>Control Asistencia</th>
-          </thead>
-          <tr v-for="(data,index) in personas" :class="asistencia[index]">
-              <td>{{data.nombre}}</td>
-              <td>{{data.apellido}}</td>
-              <td>
-                  <input :name="'asistencia-' + index" type="radio" value="asistio" :id="'asistio-' + index" v-model="asistencia[index]">Asistio</input>
-                  <input :name="'asistencia-' + index" type="radio" value="noasistio" :id="'noasistio-' + index" v-model="asistencia[index]">No Asistio</input>
-              </td>
-          </tr>
-      </table>
-  </div>
-  <script src="vue.js"></script>
-  <script>
-  const { createApp } = Vue
-  createApp({
-      data() {
-          return {
-              cantidad : 1,
-              color : "fondoblanco",
-              personas : [
-                  {
-                      nombre : 'Tulio',
-                      apellido : 'Triviño'
-                  },
-                  {
-                      nombre : 'Juan Carlos',
-                      apellido : 'Bodoque'
-                  }
-              ],
-              asistencia: []
-          }
-      },
-  }).mount('#app')
-  </script>
+        <thead>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Control Asistencia</th>
+        </thead>
+        <tr v-for="(data,index) in personas" :class="asistencia[index]">
+            <td>{{data.nombre}}</td>
+        <td>{{data.apellido}}</td>
+            <td>
+                <input :name="'asistencia-' + index" type="radio" value="asistio" :id="'asistio-' + index" v-model="asistencia[index]">Asistio</input>
+                <input :name="'asistencia-' + index" type="radio" value="noasistio" :id="'noasistio-' + index" v-model="asistencia[index]">No Asistio</input>
+            </td>
+        </tr>
+        </table>
+</div>
+<script src="vue.js"></script>
+<script>
+const { createApp } = Vue
+createApp({
+    data() {
+        return {
+            cantidad : 1,
+            color : "fondoblanco",
+            personas : [
+                {
+                    nombre : 'Tulio',
+                    apellido : 'Triviño'
+                },
+                {
+                    nombre : 'Juan Carlos',
+                    apellido : 'Bodoque'
+                }
+            ],
+            asistencia: []
+        }
+    },
+}).mount('#app')
+</script>
 </body>
 </html>
